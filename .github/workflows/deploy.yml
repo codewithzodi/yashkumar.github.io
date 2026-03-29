@@ -75,7 +75,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build && ${{ steps.detect-package-manager.outputs.runner }} next export
         env:
           NEXT_PUBLIC_TRACKING_ID: G-8FBXBFXC10
           NEXT_PUBLIC_SERVICE_ID: service_qt4ryip

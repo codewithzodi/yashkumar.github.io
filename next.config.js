@@ -5,7 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
   basePath: '/yashkumar.github.io',
   assetPrefix: '/yashkumar.github.io/',
 }
