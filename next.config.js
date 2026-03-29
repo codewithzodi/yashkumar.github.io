@@ -6,7 +6,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  // basePath: '/yashkumar.github.io', // Enable this if using project site instead of user/org site
+  basePath: '/yashkumar.github.io',
+  assetPrefix: '/yashkumar.github.io/',
 }
 
 module.exports = nextConfig
